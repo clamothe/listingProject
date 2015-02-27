@@ -164,11 +164,3 @@ def chinookCrawl(listingURL):
 
 for listing in crawlList:   #FINAL STEP!
 	listings.insert(chinookCrawl(listing))
-
-
-
-##  THEN for each LINK in newList querry DB if in DB then remove from newList, if not in DB then do nothing
-
-## What I should be left with is a list of links to listings that need to be crawled to update the DB 
-
-## FOR EACH LINK in NEW LIST we soup it up and get each parameter and place it in a list, I WANT A LIST OF LISTS; POSITION IS IMPORTANT then INSERT VIA LIST POSITION INTO DB
